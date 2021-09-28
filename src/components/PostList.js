@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from "prop-types";
 
 import Post from "./Post";
 
 const PostList = ({ posts }) => {
+  const [lastUpvoted, setLastUpvoted] = useState('');
+
+  const handleUpvote = (title) => {
+    setLastUpvoted(title);
+  }
+
   return (
-    <div className="postlist">
-      {posts.map((post) => (
-        <Post key={post.id} postData={post} />
-      ))}
-    </div>
+    <>
+      {lastUpvoted ?? <div className="last-upvoted">{lastUpvoted}</div>}
+      <div className="postlist">
+        {posts.map((post) => (
+          <Post key={post.id} postData={post} handleUpvote={handleUpvote}/>
+        ))}
+      </div>
+    </>
   )
 }
 
