@@ -29,7 +29,7 @@ Post.propTypes = {
     isPublished: PropTypes.bool,
     tags: PropTypes.arrayOf(PropTypes.string),
     title: PropTypes.string,
-  })
+  }).isRequired
 }
 
 export default Post;
