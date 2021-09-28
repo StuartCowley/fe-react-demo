@@ -1,3 +1,4 @@
+import React from 'react';
 import "./App.css";
 import Post from "./components/Post";
 
@@ -7,7 +8,7 @@ function App() {
   return (
     <div className="App">
       {posts.map((post) => (
-        <Post postData={post} />
+        <Post key={post.id} postData={post} />
       ))}
     </div>
   );

@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "title": "Learning React",
     "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempora distinctio sint numquam non, exercitationem veniam quis optio similique odit!",
     "tags": ["react", "manchester", "2021"],
@@ -8,6 +9,7 @@
     "isPublished": true
   },
   {
+    "id": 2,
     "title": "Learning React 2",
     "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempora distinctio sint numquam non, exercitationem veniam quis optio similique odit!",
     "tags": ["react", "manchester", "lecture 2", "state", "props"],
