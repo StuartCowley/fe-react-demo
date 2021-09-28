@@ -1,15 +1,13 @@
 import React from 'react';
 import "./App.css";
-import Post from "./components/Post";
+import PostList from "./components/PostList";
 
 import posts from './data/posts.json';
 
 function App() {
   return (
     <div className="App">
-      {posts.map((post) => (
-        <Post key={post.id} postData={post} />
-      ))}
+      <PostList posts={posts}/>
     </div>
   );
 }
