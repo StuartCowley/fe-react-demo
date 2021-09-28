@@ -6,5 +6,13 @@
     "author": "May21",
     "date": "27-09-2021",
     "isPublished": true
+  },
+  {
+    "title": "Learning React 2",
+    "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempora distinctio sint numquam non, exercitationem veniam quis optio similique odit!",
+    "tags": ["react", "manchester", "lecture 2", "state", "props"],
+    "author": "May21",
+    "date": "29-09-2021",
+    "isPublished": true
   }
 ]

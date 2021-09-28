@@ -6,7 +6,9 @@ import posts from './data/posts.json';
 function App() {
   return (
     <div className="App">
-      <Post postData={posts[0]} />
+      {posts.map((post) => (
+        <Post postData={post} />
+      ))}
     </div>
   );
 }
