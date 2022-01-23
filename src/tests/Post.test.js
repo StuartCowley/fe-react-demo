@@ -39,4 +39,16 @@ describe("Post", () => {
 
     expect(getByText("Author: test author")).toBeInTheDocument;
   });
+
+  test("Renders upvote button with expected value", () => {
+    render(
+      <Post
+        postData={validProps.postData}
+        handleUpvote={validProps.handleUpvote}
+      />
+    );
+    const buttonElement = screen.getByText(/upvote this/i);
+
+    expect(buttonElement).toBeInTheDocument();
+  });
 });
