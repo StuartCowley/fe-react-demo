@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post renders as expected 1`] = `
+<div
+  className="post"
+>
+  <div
+    className="post-body"
+  >
+    <h2>
+      test title
+    </h2>
+    <p>
+      test body
+    </p>
+  </div>
+  <div
+    className="post-counter"
+  >
+    <span
+      style={
+        Object {
+          "marginRight": "12px",
+        }
+      }
+    >
+      Total votes: 
+      0
+    </span>
+    <button
+      onClick={[Function]}
+      type="button"
+      value="test title"
+    >
+      Upvote this
+    </button>
+  </div>
+  <div
+    className="post-author"
+  >
+    Author: 
+    test author
+  </div>
+  <div
+    className="post-date"
+  >
+    Published: 
+    test date
+  </div>
+  <h3>
+    Tags:
+  </h3>
+  <ul
+    className="post-tags"
+  >
+    <li>
+      test tag1
+    </li>
+    <li>
+      test tag2
+    </li>
+    <li>
+      test tag3
+    </li>
+  </ul>
+</div>
+`;
