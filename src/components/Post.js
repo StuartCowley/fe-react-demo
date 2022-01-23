@@ -6,9 +6,9 @@ const Post = ({ postData, handleUpvote }) => {
   const [count, setCount] = useState(0);
 
   const handleClick = (e) => {
-    setCount(prev => prev + 1)
-    handleUpvote(e.target.value)
-  }
+    setCount((prev) => prev + 1);
+    handleUpvote(e.target.value);
+  };
 
   return (
     <div className="post">
@@ -17,8 +17,10 @@ const Post = ({ postData, handleUpvote }) => {
         {isPublished ? <p>{body}</p> : <p>Coming soon!</p>}
       </div>
       <div className="post-counter">
-        <span style={{marginRight: '12px'}}>Total votes: {count}</span>
-        <button onClick={handleClick} value={title} type="button">Upvote this</button>
+        <span style={{ marginRight: "12px" }}>Total votes: {count}</span>
+        <button onClick={handleClick} value={title} type="button">
+          Upvote this
+        </button>
       </div>
       <div className="post-author">Author: {author}</div>
       <div className="post-date">Published: {date}</div>
@@ -41,7 +43,7 @@ Post.propTypes = {
     tags: PropTypes.arrayOf(PropTypes.string),
     title: PropTypes.string,
   }).isRequired,
-  handleUpvote: PropTypes.func.isRequired
-}
+  handleUpvote: PropTypes.func.isRequired,
+};
 
 export default Post;
