@@ -28,4 +28,15 @@ describe("Post", () => {
 
     expect(testRenderer).toMatchSnapshot();
   });
+
+  test("Post author renders correctly", () => {
+    const { getByText } = render(
+      <Post
+        postData={validProps.postData}
+        handleUpvote={validProps.handleUpvote}
+      />
+    );
+
+    expect(getByText("Author: test author")).toBeInTheDocument;
+  });
 });
