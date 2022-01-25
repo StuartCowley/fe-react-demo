@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostList renders as expected 1`] = `
+Array [
+  "",
+  <div
+    className="postlist"
+  >
+    <div
+      className="post"
+    >
+      <div
+        className="post-body"
+      >
+        <h2 />
+        <p>
+          Coming soon!
+        </p>
+      </div>
+      <div
+        className="post-counter"
+      >
+        <span
+          style={
+            Object {
+              "marginRight": "12px",
+            }
+          }
+        >
+          Total votes: 
+          0
+        </span>
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Upvote this
+        </button>
+      </div>
+      <div
+        className="post-author"
+      >
+        Author: 
+      </div>
+      <div
+        className="post-date"
+      >
+        Published: 
+      </div>
+      <h3>
+        Tags:
+      </h3>
+      <ul
+        className="post-tags"
+      />
+    </div>
+    <div
+      className="post"
+    >
+      <div
+        className="post-body"
+      >
+        <h2 />
+        <p>
+          Coming soon!
+        </p>
+      </div>
+      <div
+        className="post-counter"
+      >
+        <span
+          style={
+            Object {
+              "marginRight": "12px",
+            }
+          }
+        >
+          Total votes: 
+          0
+        </span>
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Upvote this
+        </button>
+      </div>
+      <div
+        className="post-author"
+      >
+        Author: 
+      </div>
+      <div
+        className="post-date"
+      >
+        Published: 
+      </div>
+      <h3>
+        Tags:
+      </h3>
+      <ul
+        className="post-tags"
+      />
+    </div>
+  </div>,
+]
+`;
