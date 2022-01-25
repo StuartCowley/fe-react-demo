@@ -51,4 +51,16 @@ describe("Post", () => {
 
     expect(buttonElement).toBeInTheDocument();
   });
+
+  test("list renders correct number of items", () => {
+    const { getAllByRole } = render(
+      <Post
+        postData={validProps.postData}
+        handleUpvote={validProps.handleUpvote}
+      />
+    );
+    const listItems = getAllByRole('listitem');
+
+    expect(listItems.length).toBe(3);
+  });
 });
