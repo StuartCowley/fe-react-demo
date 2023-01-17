@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
+import "../styles/post.css"
+
 const Post = ({ postData, handleUpvote }) => {
   const { title, body, tags, author, date, isPublished } = postData;
   const [count, setCount] = useState(0);
@@ -12,18 +14,18 @@ const Post = ({ postData, handleUpvote }) => {
 
   return (
     <div className="post">
-      <div className="post-body">
+      <div className="post__heading">
         <h2>{title}</h2>
         {isPublished ? <p>{body}</p> : <p>Coming soon!</p>}
       </div>
-      <div className="post-counter">
-        <span style={{marginRight: '12px'}}>Total votes: {count}</span>
+      <div className="post__counter">
+        <span>Total votes: {count}</span>
         <button onClick={handleClick} value={title} type="button">Upvote this</button>
       </div>
-      <div className="post-author">Author: {author}</div>
-      <div className="post-date">Published: {date}</div>
+      <div className="post__author">Author: {author}</div>
+      <div>Published: {date}</div>
       <h3>Tags:</h3>
-      <ul className="post-tags">
+      <ul>
         {tags.map((tag) => (
           <li key={tag}>{tag}</li>
         ))}
