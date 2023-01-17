@@ -1,0 +1,30 @@
+.app {
+  position: relative;
+  box-sizing: border-box;
+  padding: 2em 4em;
+  min-height: 100%;
+}
+
+.app__background-wrap {
+  background-image: url("../images/logo192.png");
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+}
+
+.app__foreground-wrap {
+  background-color: rgb(20,20,20, 0.9);
+}
+
+.app__title {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding-bottom: 1rem;
+}
