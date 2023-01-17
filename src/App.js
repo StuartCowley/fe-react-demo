@@ -1,13 +1,17 @@
 import React from 'react';
-import "./App.css";
+import "./styles/app.css";
 import PostList from "./components/PostList";
 
 import posts from './data/posts.json';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <PostList posts={posts}/>
+    <div className="app">
+      <div className='app__background-wrap' />
+      <div className='app__foreground-wrap'>
+        <div className='app__title'>Intro to React II</div>
+        <PostList posts={posts}/>
+      </div>
     </div>
   );
 }
